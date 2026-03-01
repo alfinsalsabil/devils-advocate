@@ -1,1 +1,0 @@
-Fase 1: Memulai analisis dependensi skill devil's advocate terhadap oh-my-opencode-slim. Mendelegasikan pencarian ke explorer dan librarian.

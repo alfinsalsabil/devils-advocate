@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devils-advocate"
+version = "0.1.0"
+description = "A high-assurance orchestration framework for OpenCode"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["devils-advocate/src"]
+include = ["devils_advocate_cli*"]
