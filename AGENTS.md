@@ -1,6 +1,6 @@
 # 🤖 Devil's Advocate Agent Definitions & Orchestration
 
-Dokumen ini mendefinisikan peran, tanggung jawab, kapabilitas, dan protokol interaksi untuk setiap agen dalam framework Devil's Advocate.
+This document defines the roles, responsibilities, capabilities, and interaction protocols for each agent within the Devil's Advocate framework.
 
 ---
 
@@ -99,5 +99,5 @@ Dokumen ini mendefinisikan peran, tanggung jawab, kapabilitas, dan protokol inte
 ---
 
 ## ⚖️ Conflict Resolution Protocol
-- Jika @oracle dan @fixer tidak setuju mengenai sebuah *bug*, @explorer bertindak sebagai penengah dengan membaca kode secara langsung.
-- Jika konflik tidak terselesaikan dalam 2 iterasi, Orchestrator memiliki hak Veto (Orchestrator Veto) untuk memutuskan apakah akan mengabaikan temuan tersebut (mencatatnya sebagai *False Positive*) atau menghentikan proses dan bertanya kepada User.
+- If @oracle and @fixer disagree on a specific bug, @explorer acts as a mediator by directly inspecting the code.
+- If a conflict is not resolved within 2 iterations, the Orchestrator holds Veto power (Orchestrator Veto) to decide whether to dismiss the finding as a *False Positive* or halt the process to consult the User.

@@ -36,25 +36,25 @@ If `@oracle` finds a bug, we fix it. If it finds a missed requirement, we add it
 
 ---
 
-### 📋 Prasyarat / Prerequisites
-Devil's Advocate adalah framework orkestrasi tingkat lanjut yang berjalan di atas ekosistem **oh-my-opencode-slim**. Untuk memastikan fungsionalitas penuh, Anda **wajib** menginstal sistem dasar berikut sebelum melanjutkan:
+### 📋 Prerequisites
+Devil's Advocate isn't a lone wolf—it's an orchestration beast that sits on top of the **oh-my-opencode-slim** stack. Before you start roasting your code, make sure you've got the foundation ready:
 
-*   **Sistem Inti:** [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim)
+*   **The Engine:** [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim)
 
-Harap ikuti panduan instalasi pada tautan di atas. Setelah sistem dasar siap, Anda dapat melanjutkan dengan konfigurasi di repositori ini.
+Go grab that first. Once you're set up there, come back and let's get to work.
 
 ---
 
-## 🏗️ Arsitektur & Mekanisme
+## 🏗️ Architecture & Mechanism
 
-### Markdown-as-Engine (MCP Middleware)
-Devil's Advocate mengadopsi filosofi **"Markdown-as-Engine"**, di mana instruksi logika dan protokol interaksi agen didefinisikan dalam file Markdown terstruktur. Ini memungkinkan fleksibilitas tinggi tanpa perlu mengubah kode inti secara terus-menerus. Bertindak sebagai middleware MCP (Model Context Protocol), ia menjembatani antara instruksi pengguna dan eksekusi agen yang terverifikasi.
+### Markdown-as-Engine (The Brain)
+We vibe with the **"Markdown-as-Engine"** approach. All our logic, agent protocols, and "roast" instructions live in structured Markdown files. It's flexible, readable, and acts as the perfect MCP (Model Context Protocol) bridge between your raw ideas and verified execution.
 
-### Review Loop (The Roast)
-Mekanisme inti kami adalah **Review Loop**. Tidak ada perubahan yang dianggap selesai sebelum melewati `@oracle`. Proses ini mencakup:
-1.  **Analisis Statis**: Pengecekan logika dan arsitektur.
-2.  **Verifikasi Faktual**: Memastikan klaim didukung oleh dokumentasi asli.
-3.  **Impact Analysis**: Memastikan perubahan tidak merusak fitur lama (Anti-Regresi).
+### The Roast (Review Loop)
+The magic happens in the **Review Loop**. Nothing—and we mean *nothing*—gets a pass until `@oracle` tears it apart. We look for:
+1.  **Logic Flaws**: Is the code actually smart?
+2.  **Fact Checks**: No more hallucinations. We verify against real docs.
+3.  **No Regressions**: We make sure your new stuff doesn't blow up your old stuff.
 
 ---
 
