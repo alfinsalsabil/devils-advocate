@@ -1,16 +1,22 @@
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "devils-advocate"
+name = "devils-advocate-cli"
 version = "0.1.0"
-description = "A high-assurance orchestration framework for OpenCode"
+description = "A standalone CLI for Devil's Advocate workflow"
 readme = "README.md"
-requires-python = ">=3.10"
-license = {text = "MIT"}
-dependencies = []
+requires-python = ">=3.9"
+dependencies = [
+    "typer[all]",
+    "litellm",
+    "python-dotenv",
+    "rich",
+    "mcp",
+]
 
-[tool.setuptools.packages.find]
-where = ["devils-advocate/src"]
-include = ["devils_advocate_cli*"]
+[project.scripts]
+devils-advocate = "devils_advocate_cli.main:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"devils_advocate_cli.data" = ["*.md"]
